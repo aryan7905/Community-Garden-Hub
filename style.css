@@ -1,76 +1,142 @@
-/* General Styles */
+/* General Layout */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff;
+    line-height: 1.6;
+    background-color: #f3f3f3;
     color: #333;
 }
 
 header {
-    background: #228b22;
+    background-color: #228b22;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    background: #333;
-    margin: 0;
-    padding: 10px 0;
+    padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
+    margin: 0 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
-section {
+main {
     padding: 20px;
-    text-align: center;
 }
 
+h2 {
+    color: #228b22;
+}
+
+a {
+    color: #228b22;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Try Our Recommendations Section */
+section#recommendations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section#recommendations ul li {
+    margin-bottom: 15px;
+}
+
+section#recommendations ul li strong {
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+section#recommendations ul li ul {
+    padding-left: 15px;
+}
+
+section#recommendations ul li ul li a {
+    font-size: 0.9em;
+    color: #0073e6;
+}
+
+section#recommendations ul li ul li a:hover {
+    color: #005bb5;
+}
+
+/* Chat Section */
 aside#chat {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    width: 300px;
-    background-color: #f9f9f9;
+    width: 250px;
+    background-color: #fff;
     border: 1px solid #ccc;
     padding: 10px;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-    z-index: 100;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
-textarea#chatInput {
-    width: 100%;
-    height: 100px;
-    margin-bottom: 10px;
-}
-
-#chatBox {
-    height: 200px;
-    overflow-y: auto;
+#chatInput {
+    width: calc(100% - 60px);
+    padding: 8px;
     border: 1px solid #ddd;
-    background-color: #fff;
-    padding: 5px;
+    border-radius: 4px;
 }
 
+#sendButton {
+    width: 50px;
+    padding: 8px;
+    background-color: #228b22;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#sendButton:hover {
+    background-color: #1e7d1e;
+}
+
+/* Footer */
 footer {
-    background: #333;
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
+    position: relative;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #228b22;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
