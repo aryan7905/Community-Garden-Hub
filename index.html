@@ -1,131 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Community Garden Hub</title>
+    <!-- Link to Particle.js CDN -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-
 </head>
+
 <body>
+    <!-- Particles.js Background -->
     <div id="particles-js"></div>
 
     <header>
-        <h1>Welcome to Community Garden Hub</h1>
-        <p>Your one-stop destination for urban gardening tips, tools, and community engagement.</p>
+        <h1>Community Garden Hub</h1>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#starter-pack">Starter Pack</a></li>
-            <li><a href="#recommendations">Try Our Recommendations</a></li>
-            <li><a href="#customer-experience">Customer Experience</a></li>
-            <li><a href="#chat">Chat</a></li>
-            <li><a href="#more-about-us">More About Us</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <section id="about">
+        <!-- About Us Section -->
+        <section id="about-us">
             <h2>About Us</h2>
-            <p>
-                Community Garden Hub is your go-to platform for everything urban gardening. 
-                Whether you're a beginner or an experienced gardener, we provide resources to help you grow your own greens in urban spaces. 
-                Our mission is to inspire individuals and communities to connect with nature, grow their food, and beautify their surroundings.
-            </p>
-            <p>
-                By joining our community, you'll gain access to valuable tips, success stories, and gardening techniques that are easy to implement. 
-                Together, we can make our cities greener and more sustainable. Let's grow a better future, one garden at a time!
-            </p>
+            <p>Welcome to Community Garden Hub! We're a group of urban gardeners who believe in the power of community
+                gardening. Join us in transforming your urban space into a green oasis.</p>
         </section>
 
+        <!-- Starter Pack Section -->
         <section id="starter-pack">
             <h2>Starter Pack</h2>
-            <p>
-                New to gardening? We've got you covered! Start your journey with our exclusive beginner's kit that includes seeds, soil, tools, and easy-to-follow guides. 
-                Everything you need to grow your first plants with confidence.
-            </p>
-            <a href="https://example.com/starter-pack" target="_blank" class="read-more">Read More</a>
+            <p>Our Starter Pack includes everything you need to get started on your gardening journey. From seeds to tools,
+                we’ve got you covered!</p>
+            <a href="https://example.com">Read more</a>
         </section>
 
+        <!-- Try Our Recommendation Section -->
         <section id="recommendations">
             <h2>Try Our Recommendations</h2>
-            <p>Here are some top gardening products you might find useful:</p>
+            <p>Explore the best gardening products we recommend for you. Find them on Amazon and Flipkart!</p>
             <ul>
-                <li>
-                    <strong>Organic Seeds</strong>
-                    <ul>
-                        <li><a href="#" target="_blank">Buy on Amazon</a></li>
-                        <li><a href="#" target="_blank">Buy on Flipkart</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Sustainable Gardening Tools</strong>
-                    <ul>
-                        <li><a href="#" target="_blank">Buy on Amazon</a></li>
-                        <li><a href="#" target="_blank">Buy on Flipkart</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Composting Kits</strong>
-                    <ul>
-                        <li><a href="#" target="_blank">Buy on Amazon</a></li>
-                        <li><a href="#" target="_blank">Buy on Flipkart</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Planters and Containers</strong>
-                    <ul>
-                        <li><a href="#" target="_blank">Buy on Amazon</a></li>
-                        <li><a href="#" target="_blank">Buy on Flipkart</a></li>
-                    </ul>
-                </li>
+                <li><a href="#">Product 1 (Amazon)</a></li>
+                <li><a href="#">Product 2 (Flipkart)</a></li>
             </ul>
         </section>
 
+        <!-- Customer Experience Section -->
         <section id="customer-experience">
             <h2>Customer Experience</h2>
-            <p>
-                At Community Garden Hub, we value the feedback and stories of our customers. 
-                Explore success stories, read reviews, and see how urban gardening has transformed lives and neighborhoods.
-            </p>
-            <a href="https://example.com/customer-experience" target="_blank" class="read-more">View Photos and Stories</a>
+            <p>We value our customers' feedback! Check out what others have to say.</p>
+            <a href="https://example.com">Read more</a>
         </section>
+
+        <!-- Ask Queries Section -->
+        <section id="ask-queries">
+            <h2>Ask a Query</h2>
+            <textarea id="query" placeholder="Type your query here..."></textarea>
+            <button id="submit-query">Submit</button>
+        </section>
+
     </main>
 
-    <aside id="ask-queries">
-        <h2>Ask Queries</h2>
-        <p>If you have any questions, feel free to ask us here!</p>
-        <form id="queryForm">
-            <textarea id="queryInput" placeholder="Type your question here..." rows="4"></textarea>
-            <button type="submit" id="submitQueryButton">Submit</button>
-        </form>
-    </aside>
-    
-    
-
-    <section id="more-about-us">
-        <h2>More About Us</h2>
-        <p>Follow us and learn more about our community and initiatives:</p>
-        <ul>
-            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-        </ul>
-    </section>
-
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Community Garden Hub. All rights reserved.</p>
-        <p>
-            Follow us on:
-            <a href="https://facebook.com" target="_blank">Facebook</a> |
-            <a href="https://instagram.com" target="_blank">Instagram</a> |
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-        </p>
     </footer>
-    <script src="script.js"></script>
 
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
 </body>
+
 </html>
