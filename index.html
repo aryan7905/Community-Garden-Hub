@@ -6,6 +6,8 @@
     <title>Community Garden Hub</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="script.js"></script>
+
 </head>
 <body>
     <div id="particles-js"></div>
@@ -94,11 +96,15 @@
         </section>
     </main>
 
-    <aside id="chat">
-        <h2>Chat with Us</h2>
-        <input type="text" id="chatInput" placeholder="Type your message...">
-        <button id="sendButton">Send</button>
+    <aside id="ask-queries">
+        <h2>Ask Queries</h2>
+        <p>If you have any questions, feel free to ask us here!</p>
+        <form id="queryForm">
+            <textarea id="queryInput" placeholder="Type your question here..." rows="4"></textarea>
+            <button type="submit" id="submitQueryButton">Submit</button>
+        </form>
     </aside>
+    
 
     <section id="more-about-us">
         <h2>More About Us</h2>
