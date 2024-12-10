@@ -80,4 +80,21 @@ particlesJS('particles-js', {
     },
     "retina_detect": true
   });
+// Add event listener for submit button
+document.getElementById('submit-query').addEventListener('click', function() {
+    // Get the value of the query
+    var query = document.getElementById('query').value;
+    
+    // Check if the query is not empty
+    if (query.trim() !== "") {
+        // Display a confirmation message
+        alert("Your query has been submitted!");
+        
+        // Clear the textarea after submission
+        document.getElementById('query').value = "";
+    } else {
+        // If the textarea is empty, show a warning
+        alert("Please type your query before submitting.");
+    }
+});
   
