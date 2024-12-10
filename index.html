@@ -3,11 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Community Garden Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
 <body>
-    <h1>hello world</h1>
-    <center><p1: style="background-color: aqua;font-family: Arial, Helvetica, sans-serif;">This is test</p1></center>
-    <h1 style="font-size: larger;background-color: brown;">This is uploaded to Test1</h1>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#slideshow">Image Collection</a></li>
+            <li><a href="#chat">Chat</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h1>About Us</h1>
+        <p>Welcome to the Community Garden Hub, where urban gardeners share tips, ideas, and experiences to grow together.</p>
+    </section>
+
+    <!-- Image Collection -->
+    <section id="slideshow">
+        <h1>Image Collection</h1>
+        <a href="slideshow.html">View our image slideshow</a>
+    </section>
+
+    <!-- Chat Section -->
+    <section id="chat">
+        <h1>Chat with Us</h1>
+        <textarea id="chatInput" placeholder="Type a message..."></textarea>
+        <div id="chatBox"></div>
+    </section>
+
+    <!-- Particles.js Effect -->
+    <div id="particles-js"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
