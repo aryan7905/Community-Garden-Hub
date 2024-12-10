@@ -89,54 +89,47 @@ section#recommendations ul li ul li a:hover {
 
 /* Ask Queries Section */
 aside#ask-queries {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: 300px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
+    position: relative; /* Change to relative to make it part of the page */
+    margin: 20px auto; /* Center the section within the page layout */
+    width: 80%; /* Constrain width */
+    max-width: 400px;
+    background-color: #f7faf7;
+    border: 1px solid #228b22;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
+/* Ask Queries Section Title */
 aside#ask-queries h2 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: #228b22;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-aside#ask-queries p {
-    font-size: 0.9em;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-#queryForm {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
+/* Input Field */
 #queryInput {
-    width: 100%;
+    width: calc(100% - 20px);
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    resize: none;
     font-size: 0.9em;
+    resize: none;
+    margin-bottom: 10px;
 }
 
+/* Submit Button */
 #submitQueryButton {
+    width: 100%;
     padding: 10px;
     background-color: #228b22;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 0.9em;
+    font-size: 1em;
+    margin-top: 5px;
 }
 
 #submitQueryButton:hover {
