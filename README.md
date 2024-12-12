@@ -1,8 +1,8 @@
 # Community-Garden-Hub
 Members : 
-Anurag, 
-Animesh Chandra Srivastava, 
-Aryan Kumar Srivastava, 
-Aryan Khokhar
-Ansh Rajput
+Anurag(57), 
+Animesh Chandra Srivastava(42), 
+Aryan Kumar Srivastava(69), 
+Aryan Khokhar(68),
+Ansh Rajput(52)
 
