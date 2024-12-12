@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Gardening Hub</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url(peakpx.jpg) no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(34, 139, 34, 0.8);
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 100, 0, 0.9);
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: rgba(34, 139, 34, 0.9);
+        }
+
+        .signup {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .signup button {
+            background-color: rgba(34, 139, 34, 0.9);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .signup button:hover {
+            background-color: rgba(0, 100, 0, 0.9)
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(34, 139, 34, 0.8);
+            color: white;
+            position: relative;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 200px;
+            color: darkgray;
+        }
+
+        .plant-of-the-day {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .plant {
+            flex: 1 1 calc(30% - 20px);
+            margin: 10px;
+            padding: 10px;
+            background-color: rgba(240, 255, 240, 0.9);
+            border: 1px solid rgba(34, 139, 34, 0.3);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .plant {
+                flex: 1 1 100%;
+            }
+        }
+        forum-container {
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .forum-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .comment {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .comment:last-child {
+            border-bottom: none;
+        }
+        .comment-author {
+            font-weight: bold;
+            color: #040000;
+        }
+        .comment-text {
+            margin: 5px 0 10px;
+            color: #040000;
+        }
+        .comment-time {
+            font-size: 12px;
+            color: #0a0000;
+        }
+        .add-comment {
+            margin-top: 20px;
+        }
+        .add-comment input, .add-comment textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .add-comment button {
+            padding: 10px 15px;
+            background: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .add-comment button:hover {
+            background: #218838;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Community Gardening Hub</h1>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Our Services</a>
+        <a href="#plant">Plant of the Day</a>
+        <a href="#signup">Sign Up</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to the Community Gardening Hub! We are dedicated to creating beautiful, sustainable green spaces for everyone to enjoy. Our mission is to bring communities together through the love of gardening and nature.</p>
+            <div><center><img src="Images/WhatsApp Image 2024-12-12 at 10.04.13 AM.jpeg" height="500px" width="1000px" alt=""></center></div>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Community Garden Planning and Management</li>
+                <li>Workshops on Sustainable Gardening</li>
+                <li>Plant Sales and Expert Advice</li>
+                <li>Volunteer Opportunities</li>
+            </ul>
+            <div> <center> <img src="Images/WhatsApp Image 2024-12-12 at 10.06.05 AM.jpeg" height="500px" width="1000px" alt=""> </center> </div>
+        </section>
+
+        <section id="plant">
+            <h2>Plant of the Day</h2>
+            <div class="plant-of-the-day">
+                <div class="plant">
+                    <h3>Rosemary</h3>
+                    <p>A fragrant herb that is perfect for culinary use and garden beauty.</p>
+                    <div> <center> <img src="Images/WhatsApp Image 2024-12-12 at 10.05.03 AM.jpeg" height="250px" width="250px" alt=""></center></div>
+                </div>
+                <div class="plant">
+                    <h3>Sunflower</h3>
+                    <p>Bright and cheerful, sunflowers bring a burst of sunshine to your garden.</p>
+                    <div> <center> <img src="Images/WhatsApp Image 2024-12-12 at 10.06.29 AM.jpeg" height="250px" width="250px" alt=""></center></div>
+                </div>
+                <div class="plant">
+                    <h3>Aloe Vera</h3>
+                    <p>A versatile plant known for its soothing and healing properties.</p>
+                    <div> <center> <img src="Images/WhatsApp Image 2024-12-12 at 10.05.26 AM.jpeg" height="250px" width="250px" alt=""></center></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="signup" class="signup">
+            <h2>Join Us</h2>
+            <p>Sign up to become a part of our vibrant gardening community!</p>
+            <a ;" href="signup.html"> <button>Sign Up</button></a>
+        </section>
+    </div>
+<div class="forum-container">
+    <div class="forum-title">Forum Discussions</div>
+
+    <div id="comments">
+        <!-- Comments will appear here -->
+    </div>
+
+    <div class="add-comment">
+        <input type="text" id="author" placeholder="Your name">
+        <textarea id="comment" rows="4" placeholder="Your comment"></textarea>
+        <button onclick="addComment()">Post Comment</button>
+    </div>
+</div>
+
+<script>
+    // Function to add a comment
+    function addComment() {
+        const author = document.getElementById('author').value.trim();
+        const commentText = document.getElementById('comment').value.trim();
+
+        if (author && commentText) {
+            const commentSection = document.getElementById('comments');
+
+            // Create comment elements
+            const commentDiv = document.createElement('div');
+            commentDiv.classList.add('comment');
+
+            const authorSpan = document.createElement('span');
+            authorSpan.classList.add('comment-author');
+            authorSpan.textContent = author;
+
+            const timeSpan = document.createElement('span');
+            timeSpan.classList.add('comment-time');
+            const now = new Date();
+            timeSpan.textContent = ` | ${now.toLocaleString()}`;
+
+            const textP = document.createElement('p');
+            textP.classList.add('comment-text');
+            textP.textContent = commentText;
+
+            // Append elements
+            commentDiv.appendChild(authorSpan);
+            commentDiv.appendChild(timeSpan);
+            commentDiv.appendChild(textP);
+
+            commentSection.appendChild(commentDiv);
+
+            // Clear inputs
+            document.getElementById('author').value = '';
+            document.getElementById('comment').value = '';
+        } else {
+            alert('Please fill in both fields.');
+        }
+    }
+</script>
+
+</body>
+</html>
+
+
+    <footer>
+        <p>&copy; 2024 Community Gardening Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
