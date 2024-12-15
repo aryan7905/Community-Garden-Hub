@@ -8,7 +8,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: url(peakpx.jpg) no-repeat center center fixed;
+            background: url('Images/WhatsApp Image 2024-12-12 at 10.05.49 AM-min.jpeg') no-repeat center center fixed;
             background-size: cover;
             color: #333;
         }
@@ -225,7 +225,7 @@
     <div class="forum-title">Forum Discussions</div>
 
     <div id="comments">
-        <!-- Comments will appear here -->
+        
     </div>
 
     <div class="add-comment">
@@ -236,7 +236,7 @@
 </div>
 
 <script>
-    // Function to add a comment
+    
     function addComment() {
         const author = document.getElementById('author').value.trim();
         const commentText = document.getElementById('comment').value.trim();
@@ -244,7 +244,7 @@
         if (author && commentText) {
             const commentSection = document.getElementById('comments');
 
-            // Create comment elements
+           
             const commentDiv = document.createElement('div');
             commentDiv.classList.add('comment');
 
@@ -261,14 +261,13 @@
             textP.classList.add('comment-text');
             textP.textContent = commentText;
 
-            // Append elements
+            
             commentDiv.appendChild(authorSpan);
             commentDiv.appendChild(timeSpan);
             commentDiv.appendChild(textP);
 
             commentSection.appendChild(commentDiv);
 
-            // Clear inputs
             document.getElementById('author').value = '';
             document.getElementById('comment').value = '';
         } else {
