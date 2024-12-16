@@ -25,19 +25,38 @@
         }
 
         .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
             padding: 2rem;
         }
 
         .product {
+            flex: 1 1 calc(33.33% - 1rem);
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            margin-bottom: 1.5rem;
             padding: 1rem;
             background-color: white;
             border: 1px solid #ddd;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: calc(33.33% - 1rem);
+        }
+
+        @media (max-width: 768px) {
+            .product {
+                flex: 1 1 calc(50% - 1rem);
+                max-width: calc(50% - 1rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
         }
 
         .product h2 {
@@ -96,35 +115,34 @@
             <img src="Images/91Y3l-BVm-L._SX522_.jpg" alt="Organic Fertilizer">
             <h2>Organic Fertilizer</h2>
             <p>Enhance your garden's growth with our eco-friendly organic fertilizer. Perfect for all types of plants.</p>
-            <a href="https://www.amazon.in/organic-fertilizers/s?k=organic+fertilizers">Click Here</a>
+            <a href="https://www.amazon.in/organic-fertilizers/s?k=organic+fertilizers">Order Now</a>
         </div>
-
         <div class="product">
             <img src="Images/Hnet.com-image-2021-12-14T122856.414.jpg" alt="Handcrafted Planters">
             <h2>Handcrafted Planters</h2>
             <p>Beautifully designed, durable planters to add charm to your garden or indoor spaces.</p>
-            <a href="https://www.amazon.in/handmade-planter/s?k=handmade+planter">Click Here</a>
+            <a href="https://www.amazon.in/handmade-planter/s?k=handmade+planter">Order Now</a>
         </div>
 
         <div class="product">
             <img src="Images/71-4IGXtwGL._SX679_.jpg" alt="Gardening Tools Set">
             <h2>Gardening Tools Set</h2>
             <p>A complete set of high-quality tools to make your gardening experience easier and more enjoyable.</p>
-            <a href="https://www.amazon.in/s?k=gradening+toolset&crid=OCCTZKO4SNHG&sprefix=gradening+toolset%2Caps%2C255&ref=nb_sb_noss">Click Here</a>
+            <a href="https://www.amazon.in/s?k=gradening+toolset&crid=OCCTZKO4SNHG&sprefix=gradening+toolset%2Caps%2C255&ref=nb_sb_noss">Order Now</a>
         </div>
 
         <div class="product">
             <img src="Images/COMBO_2_webp_1.webp" alt="Seeds Packets">
             <h2>Seeds Packets</h2>
             <p>Choose from a variety of flower, vegetable, and herb seeds to grow your dream garden.</p>
-            <a href="https://www.amazon.in/s?k=seed+packets&crid=3Q0HGZ639C5ZE&sprefix=seed+packets%2Caps%2C228&ref=nb_sb_noss_1">Click Here</a>
+            <a href="https://www.amazon.in/s?k=seed+packets&crid=3Q0HGZ639C5ZE&sprefix=seed+packets%2Caps%2C228&ref=nb_sb_noss_1">Order Now</a>
         </div>
 
         <div class="product">
             <img src="Images/istockphoto-1286154207-2048x2048.jpg" alt="Compost Bins">
             <h2>Compost Bins</h2>
             <p>Efficient and compact compost bins to recycle your kitchen waste into nutrient-rich compost.</p>
-            <a href="https://www.amazon.in/s?k=compost+bins&crid=2YAJXPJWGQJ0A&sprefix=compost+bins%2Caps%2C238&ref=nb_sb_noss_1">Click Here</a>
+            <a href="https://www.amazon.in/s?k=compost+bins&crid=2YAJXPJWGQJ0A&sprefix=compost+bins%2Caps%2C238&ref=nb_sb_noss_1">Order Now</a>
         </div>
     </div>
 
@@ -133,4 +151,3 @@
     </footer>
 </body>
 </html>
-
